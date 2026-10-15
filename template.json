@@ -5,6 +5,19 @@
   "owner": "motiongit",
   "slug": "motiongit-promo-ink",
   "website": "https://motiongit.com/@motiongit/motiongit-promo-ink",
+  "version": "2.5.1",
+  "technical": {
+    "en": [
+      "Declared runtime profile: html-canvas/1.",
+      "Editable inputs are mapped through the template parameter schema and preset to its existing animation project.",
+      "The declared timeline has a fixed duration; new content fits its existing scene order and timing."
+    ],
+    "zh": [
+      "声明的运行配置：html-canvas/1。",
+      "通过模板参数和预设，将本期文字、数据或素材映射到已有动画工程。",
+      "已声明时间轴为固定时长，本期内容按现有场景顺序和节奏适配。"
+    ]
+  },
   "checkedAt": "2026-10-14",
   "availability": "download-available",
   "title": {
@@ -35,124 +48,29 @@
   },
   "materials": [
     {
-      "en": "Voiceover: text, up to 240 characters.",
-      "zh": "Voiceover：文字，不超过 240 个字符。",
+      "en": "Your topic, script and facts to preserve.",
+      "zh": "本期主题、文稿与需要准确保留的信息。",
       "required": true
     },
     {
-      "en": "Voiceovermode: text. Explicit current-production voice choice; no original-mix fallback..",
-      "zh": "Voiceovermode：文字。",
+      "en": "The current brand name, logo and applicable feature icons.",
+      "zh": "本期品牌名称、Logo，以及实际需要的功能图标。",
       "required": true
     },
     {
-      "en": "Text01: text, up to 100 characters.",
-      "zh": "Text01：文字，不超过 100 个字符。",
+      "en": "Current product screenshots, screen recordings and display materials for the declared media slots.",
+      "zh": "声明素材槽位对应的本期产品截图、录屏与展示内容。",
       "required": true
     },
     {
-      "en": "Text02: text, up to 100 characters.",
-      "zh": "Text02：文字，不超过 100 个字符。",
-      "required": true
+      "en": "The current voice recording or your narration preference for this production.",
+      "zh": "本期配音文件，或是否需要配音的安排。",
+      "required": false
     },
     {
-      "en": "Text03: text, up to 100 characters.",
-      "zh": "Text03：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text04: text, up to 100 characters.",
-      "zh": "Text04：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text05: text, up to 100 characters.",
-      "zh": "Text05：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text06: text, up to 12 characters.",
-      "zh": "Text06：文字，不超过 12 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text07: text, up to 100 characters.",
-      "zh": "Text07：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text08: text, up to 100 characters.",
-      "zh": "Text08：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text09: text, up to 100 characters.",
-      "zh": "Text09：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text10: text, up to 100 characters.",
-      "zh": "Text10：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text11: text, up to 100 characters.",
-      "zh": "Text11：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text12: text, up to 100 characters.",
-      "zh": "Text12：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text13: text, up to 12 characters.",
-      "zh": "Text13：文字，不超过 12 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text14: text, up to 100 characters.",
-      "zh": "Text14：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text15: text, up to 100 characters.",
-      "zh": "Text15：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text16: text, up to 100 characters.",
-      "zh": "Text16：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text17: text, up to 12 characters.",
-      "zh": "Text17：文字，不超过 12 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text18: text, up to 100 characters.",
-      "zh": "Text18：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text19: text, up to 100 characters.",
-      "zh": "Text19：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text20: text, up to 100 characters.",
-      "zh": "Text20：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text21: text, up to 100 characters.",
-      "zh": "Text21：文字，不超过 100 个字符。",
-      "required": true
-    },
-    {
-      "en": "Text22: text, up to 12 characters.",
-      "zh": "Text22：文字，不超过 12 个字符。",
-      "required": true
+      "en": "A licensed music track or your preference for music in this production.",
+      "zh": "本期已授权配乐，或本期是否需要配乐的偏好。",
+      "required": false
     }
   ],
   "dependencies": [
@@ -175,12 +93,12 @@
   },
   "boundaries": {
     "en": [
-      "The documented output is 1920 × 1080, 60 fps; default demo duration is 59.25 seconds.",
+      "The documented output is 1920 × 1080, 60 fps. The public demo is 59.25 seconds.",
       "Use the actual package parameter bounds; extra materials do not automatically create extra scenes.",
       "Unreviewed portrait conversion, arbitrary scene reordering, or declaring unrelated diagram semantics without adapting and reviewing them."
     ],
     "zh": [
-      "已声明输出为 1920 × 1080，60 fps；默认样片 59.25 秒。",
+      "已声明输出为 1920 × 1080，60 fps；公开样片 59.25 秒。",
       "按实际包的参数边界制作；增加素材不会自动增加场景。"
     ]
   },
